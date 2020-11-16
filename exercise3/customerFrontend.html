@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<script type="text/javascript" src="formChecker.js"></script>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+	</head>
+
+	<body>
+		<form id="list" onreset="reset()" onsubmit="checker()" action="customerBackend.php" method="post">
+
+			<label for="userN">Please enter your username:</label> <br>
+			<input type="text" id="userN" name="userN"></input><br>
+			<label for="userP">Please enter your password:</label> <br>	
+			<input type="text" id="userP" name="userP"></input> <br> <br>
+
+
+			
+			<!-- Provide shopping list 
+nva = 14
+ncda = 12	
+ncds = 60
+uva = 8
+ucda = 6
+ucds = 40
+ut = 70
+
+			-->
+			<label for="nva">New vinyl album</label>
+			<input type="number" id="nva" name="nva"></input><br>
+			<label for="ncda">New compact disc album</label>
+			<input type="number" id="ncda" name="ncda"></input><br>
+			<label for="ncds">New CD system</label>
+			<input type="number" id="ncds" name="ncds"></input><br>
+			<label for="uva">Used vinyl album</label>
+			<input type="number" id="uva" name="uva"></input><br>
+			<label for="ucda">Used compact disc album</label>
+			<input type="number" id="ucda" name="ucda"></input><br>
+			<label for="ucds">Used CD system</label>
+			<input type="number" id="ucds" name="ucds"></input><br>
+			<label for="ut">Used turntable</label>
+			<input type="number" id="ut" name="ut"></input><br>
+
+			<!-- Give user options for shipping -->
+			<label for="ship">Select shipping method</label> <br>
+			<input type="radio" name="ship" value="seven">Seven-day</input> <br>
+			<input type="radio" name="ship" value="one">Overnight</input> <br>
+			<input type="radio" name="ship" value="three">Three-day</input> <br>
+			
+			<label id="error"></label>
+
+			<button type="reset">Reset</button> <br>
+			<button type="submit">Submit</button> <br>
+		</form>
+	</body>
+</html>

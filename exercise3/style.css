@@ -1,0 +1,9 @@
+label
+{
+	color: blue;
+}
+
+table, th, td
+{
+	border: 10px solid black;
+}
